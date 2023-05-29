@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Créer son profil</title>
+  </head>
+  <body>
+    <header>
+      <h1>Créer un profil</h1>
+    </header>
+
+    <!-- C'est un formulaire auquel est attaché un script qui va récolter et stocker l'information pour l'afficher sur la page du profil -->
+    <main>
+      <form id="registration-form">
+        <div>
+          <label for="full-name">Nom et Prénom:</label>
+          <input type="text" id="full-name" required />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+        </div>
+        <div>
+          <label for="password">Mot de passe:</label>
+          <input type="password" id="password" required />
+        </div>
+        <button type="submit">Créer le profil</button>
+      </form>
+    </main>
+    <script src="../Scripts/registration.js"></script>
+  </body>
+</html>

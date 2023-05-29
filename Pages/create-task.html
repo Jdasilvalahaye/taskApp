@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styles/styleCreateTask.css" />
+    <title>Création de tâche</title>
+  </head>
+  <body>
+    <header><h1>Créer une nouvelle tâche</h1></header>
+    <section>
+      <form action="">
+        <label for="task-title">Titre de la tâche</label>
+        <input type="text" id="task-title" name="task-title" required />
+        <label for="task-description">Description de la tâche</label>
+        <textarea name="task-description" id="task-description" cols="30" rows="10"></textarea>
+        <label for="task-due-date">Date d'échéance</label>
+        <input type="date" id="task-due-date" name="task-due-date" required />
+        <label for="task-priority">Priorité: </label>
+        <select name="task-priority" id="task-priority" required>
+          <option value="low">Faible</option>
+          <option value="medium">Moyenne</option>
+          <option value="hight">Élevée</option>
+        </select>
+        <label for="assigned-person">Tâche attribuée à :</label>
+        <input type="text" id="assigned-person" name="assigned-person" required />
+        <button type="submit">Créer</button>
+      </form>
+    </section>
+  </body>
+</html>
