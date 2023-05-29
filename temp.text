@@ -1,0 +1,48 @@
+/* L'icone de barre de navigation */
+.navbarIcon {
+  display: flex;
+  color: #333;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+/* La navbar quand pliée */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: width 0.3s ease;
+  background-color: wheat;
+}
+/* Retire les bullets point de la navbar */
+.navbar ul {
+  list-style: none;
+}
+/* La taille de la navbar quand on passe la souris dessus */
+.navbar:hover {
+  width: 200px;
+}
+/* Permet de masquer les liens de la navbar (mais pas les icones)*/
+.navbar ul li a {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+/* Permet d'afficher les liens de la navbar*/
+.navbar:hover ul li a {
+  display: inline-block;
+  opacity: 1;
+}
+.navbar ul li i {
+  font-size: 25px;
+}

@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Styles/styleIndex.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Accueil</title>
   </head>
   <body>
@@ -14,15 +21,32 @@
         Bienvenue sur notre application de gestion de tâches. Ici vous pourrez facilement organiser les tâches de votre
         quotidien
       </p>
-      <ul>
-        <li><a href="./register.html">S'inscrire</a></li>
-        <li><a href="">Se connecter</a></li>
-      </ul>
     </header>
-    <nav class="sidebar">
-      <ul>
-        <li><a href="./create-task.html">Créer une tâche</a></li>
-        <li><a href="./profile.html">Mon profil</a></li>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="logo">
+          <a href="#" class="nav-link">
+            <span class="link-text">NonoApp</span>
+            <i class="fa-solid fa-leaf"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./login.html" class="nav-link"
+            ><i class="fa-solid fa-user"></i><span class="link-text">Se connecter</span></a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a href="./profile.html" class="nav-link"
+            ><i class="fa-sharp fa-solid fa-address-card"></i><span class="link-text">Mon profil</span></a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a href="./profile.html" class="nav-link"
+            ><i class="fa-solid fa-calendar-plus"></i><span class="link-text">Créer une tâche</span></a
+          >
+        </li>
       </ul>
     </nav>
     <section>
